@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/python
 import random
 import copy
 
@@ -286,24 +286,24 @@ def bucketSort(A):
 #======#
 
 n = input()
-#A = createRandomIntArray(n, 0, n)
-A = generateIntArray(n) # Distinct sequence of integers
+A = createRandomIntArray(n, 0, n)
+#A = generateIntArray(n) # Distinct sequence of integers
 print "Input: ", A
 
-# B = selectionSort(copy.deepcopy(A))
-# C = insertionSort(copy.deepcopy(A))
-# D = quickSort(copy.deepcopy(A), 0, len(A)-1)
-# E = shellSort(copy.deepcopy(A))
-# F = mergeSort(copy.deepcopy(A), 0, len(A)-1)
-# G = countingSort(copy.deepcopy(A))
-# H = radixSort(copy.deepcopy(A))
+B = selectionSort(copy.deepcopy(A))
+C = insertionSort(copy.deepcopy(A))
+#D = quickSort(copy.deepcopy(A), 0, len(A)-1)
+E = shellSort(copy.deepcopy(A))
+F = mergeSort(copy.deepcopy(A), 0, len(A)-1)
+G = countingSort(copy.deepcopy(A))
+H = radixSort(copy.deepcopy(A))
 I = bucketSort(copy.deepcopy(A))
 
-# print "Selection Sort: ", B, isSorted(B)
-# print "Insertion Sort: ", C, isSorted(C)
-# print "Quick Sort: ", D, isSorted(D)
-# print "Shell Sort: ", E, isSorted(E)
-# print "Merge Sort: ", F, isSorted(F)
-# print "Counting Sort: ", G, isSorted(G)
-# print "Radix Sort: ", H, isSorted(H)
+print "Selection Sort: ", B, isSorted(B)
+print "Insertion Sort: ", C, isSorted(C)
+#print "Quick Sort: ", D, isSorted(D)
+print "Shell Sort: ", E, isSorted(E)
+print "Merge Sort: ", F, isSorted(F)
+print "Counting Sort: ", G, isSorted(G)
+print "Radix Sort: ", H, isSorted(H)
 print "Bucket Sort: ", I, isSorted(I)
